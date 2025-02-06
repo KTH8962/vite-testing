@@ -16,7 +16,7 @@ export default function MovieList() {
       <input
         type="text"
         value={title}
-        placeholder="영화 제목을 입력하세요!"
+        placeholder="영화 제목을 입력하세요"
         onChange={(e) => setTitle(e.target.value)}
         onKeyDown={(e) =>
           e.key === "Enter" && fetchMovies(title).then(setMovies)
