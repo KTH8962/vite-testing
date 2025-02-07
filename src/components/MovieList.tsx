@@ -22,9 +22,11 @@ export default function MovieList() {
           e.key === "Enter" && fetchMovies(title).then(setMovies)
         }
       />
-      {movies.map((movie) => (
-        <div key={movie.imdbID}>{movie.Title}</div>
-      ))}
+      <ul>
+        {movies.map((movie) => (
+          <li key={movie.imdbID}>{movie.Title}</li>
+        ))}
+      </ul>
     </>
   )
 }
